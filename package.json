@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mohamedrehan1.github.io/portfolio-website",
   "name": "react-portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "firebase": "^9.8.3",
-    "gsap-trial": "^3.9.0",
+    "gsap": "file:gsap-bonus.tgz",
     "leaflet": "^1.9.3",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
@@ -29,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
